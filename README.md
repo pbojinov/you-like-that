@@ -1,6 +1,6 @@
 # You Like That Don't You?
 
-> This cheeky extension makes a sound when you "like" something on your favorite social media sites.
+> Automatically play a funny sound clip in the background when you "like" something on your favorite social media sites.
 
 ## Supported Sites
 
