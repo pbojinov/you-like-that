@@ -1,9 +1,13 @@
+// Petar Bojinov
+// 12/4/15
+// https://github.com/pbojinov/you-like-that
+
 console.log("Hello. This message was sent from scripts/inject.js");
 
 function playSound() {
-	var myAudio = new Audio();        // create the audio object
-	myAudio.src = "https://a.clyp.it/4wdkdhn5.mp3"; // assign the audio file to it
-	myAudio.play();   
+	chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
+	  console.log(response.farewell);
+	});
 }
 
 // instagram
@@ -11,7 +15,15 @@ $('.coreSpriteHeartOpen').on('click', function() {
 	playSound();
 });
 
-// facebook - not working
+// twitter 
+// - violated CSP "media-src" so we moved audio to background
+$('.js-actionFavorite').on('click', function() {
+	playSound();
+});
+
+// facebook - not working, can't select like button
 $('.UFILikeLink').on('click', function() {
 	playSound();
 });
+
+
