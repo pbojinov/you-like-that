@@ -1,8 +1,8 @@
 {
-  "name": "You Like that Don't You?",
+  "name": "You Like That Don't You?",
   "version": "0.1.0",
   "manifest_version": 2,
-  "description": "This cheeky extension makes a sound when you like something on your favorite social media sites",
+  "description": "This extension makes a sound when you \"like\" something on your favorite social media sites.",
   "homepage_url": "https://github.com/pbojinov/you-like-that",
   "icons": {
     "16": "icons/icon16.png",
