@@ -8,4 +8,6 @@
 
 * Twitter
 
+* Vine (coming soon)
+
 * Facebook (coming soon)

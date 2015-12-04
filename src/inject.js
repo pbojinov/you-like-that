@@ -5,6 +5,7 @@
 console.log("Hello. This message was sent from scripts/inject.js");
 
 function playSound() {
+	// https://developer.chrome.com/extensions/messaging
 	chrome.runtime.sendMessage({greeting: "hello"}, function(response) {
 	  console.log(response.farewell);
 	});
@@ -21,7 +22,12 @@ $('.js-actionFavorite').on('click', function() {
 	playSound();
 });
 
-// facebook - not working, can't select like button
+// vine - doesn't work either (ember)
+$('.like').on('click', function() {
+	playSound();
+});
+
+// facebook - not working, can't select like button (react)
 $('.UFILikeLink').on('click', function() {
 	playSound();
 });

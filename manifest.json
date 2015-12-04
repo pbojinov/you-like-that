@@ -19,7 +19,10 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.instagram.com/*", "*://*.facebook.com/*", "*://*.twitter.com/*"
+        "*://*.instagram.com/*", 
+        "*://*.facebook.com/*", 
+        "*://*.twitter.com/*",
+        "*://*.vine.co/*"
       ],
       "js": [
         "js/jquery/jquery.min.js",

@@ -18,6 +18,7 @@ function playSound() {
     myAudio.play();
 }
 
+// https://developer.chrome.com/extensions/messaging
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         console.log(sender.tab ?
