@@ -12,6 +12,7 @@
 
 * Twitter
 
+* Facebook
+
 * Vine (coming soon)
 
-* Facebook (coming soon)
